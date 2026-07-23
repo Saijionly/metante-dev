@@ -155,6 +155,11 @@ const about: About = {
         role: "Hardware & Software Engineer, UI Tester",
         achievements: [
           <>
+            <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
+            Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
+            Household and Small-Scale Aquaculture.
+          </>,
+          <>
             Created an IoT-based automated feeding and water quality monitoring system with
             machine learning-assisted fish.
           </>,
