@@ -141,13 +141,34 @@ const about: About = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
           },
+        ],
+      },
+      {
+        company: "Thesis Project",
+        timeframe: "2024 – 2025",
+        role: "Hardware & Software Engineer, UI Tester",
+        achievements: [
+          <>
+            Created an IoT-based automated feeding and water quality monitoring system with
+            machine learning-assisted fish.
+          </>,
+          <>
+            Responsible for testing and maintaining the system, ensuring proper function and
+            troubleshooting connectivity issues.
+          </>,
+        ],
+        images: [
+          { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 16, height: 9 },
+          { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
+          { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 16, height: 9 },
+          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 16, height: 9 },
+          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 16, height: 9 },
         ],
       },
       {
@@ -173,23 +194,11 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-  company: "Thesis Project",
-  timeframe: "2024 – 2025",
-  role: "Hardware & Software Engineer, UI Tester",
-  achievements: [
-    <>Created an IoT-based automated feeding and water quality monitoring system with machine learning-assisted fish.</>,
-    <>Responsible for testing and maintaining the system, ensuring proper function and troubleshooting connectivity issues.</>,
-  ],
-  images: [
-    { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 16, height: 9 },
-    { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
-    { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
-    { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
-    { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
-    // ...atbp.
-  ],
-},
-
+        name: "Colegio De Montalban, 2022 - 2026",
+        description: <>Bachelor of Science in Computer Engineering.</>,
+      },
+    ],
+  },
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
@@ -205,7 +214,6 @@ const about: About = {
             icon: "figma",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
@@ -240,7 +248,6 @@ const about: About = {
             icon: "supabase",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
@@ -253,7 +260,6 @@ const about: About = {
     ],
   },
 };
-
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
