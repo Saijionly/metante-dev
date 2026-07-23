@@ -38,7 +38,7 @@ const social: Social = [
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/_heyesiuol/",
     essential: false,
   },
   {
@@ -120,12 +120,24 @@ const about: About = {
         role: "IT Desktop Engineer Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Experienced in assisting technical tasks, basic troubleshooting, and supporting
+            hardware and software operations during my internship.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Assisted in technical support during my internship by managing and prioritizing IT support
+            tickets for employees, ensuring timely resolution of technical issues.
+          </>,
+          <>
+            Provided hands-on support for both hardware and software, including diagnosing problems,
+            performing repairs, and replacing faulty components.
+          </>,
+          <>
+            Gained proficiency in ticketing systems and remote desktop tools, strengthening my ability to
+            provide efficient, clear, and reliable tech support across the team.
+          </>,
+          <>
+            Delivered remote technical support, guiding employees through troubleshooting steps and
+            ensuring minimal downtime.
           </>,
         ],
         images: [
