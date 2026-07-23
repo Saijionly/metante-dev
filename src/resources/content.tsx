@@ -8,7 +8,7 @@ const person: Person = {
   role: "Computer Engineer",
   avatar: "/images/avatar.jpg",
   email: "lemuelayaso1@gmail.com",
-  location: "Rodriguez, Rizal", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Filipino"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
