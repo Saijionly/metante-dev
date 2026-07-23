@@ -172,49 +172,24 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
-      {
-        name: "Colegio De Montalban, 2022 - 2026",
-        description: <>Bachelor of Science in Computer Engineering.</>,
-      },
-      {
-        name: "PROJECT EXPERIENCE (Thesis Project)",
-        description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
-                       properly, and troubleshooting connectivity issues during development.</>,
-      }
-          {
-            src: "/images/projects/project-01/c1.jpg",
-            alt: "Project screenshot 1",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/c2.jpg",
-            alt: "Project screenshot 2",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/c3.jpg",
-            alt: "Project screenshot 3",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/c4.jpg",
-            alt: "Project screenshot 4",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/c5.jpg",
-            alt: "Project screenshot 5",
-            width: 16,
-            height: 9,
-          },
-               ],
-         images: []
-      },
-    ],
+      {{
+  company: "Thesis Project",
+  timeframe: "2024 – 2025",
+  role: "Hardware & Software Engineer, UI Tester",
+  achievements: [
+    <>Created an IoT-based automated feeding and water quality monitoring system with machine learning-assisted fish.</>,
+    <>Responsible for testing and maintaining the system, ensuring proper function and troubleshooting connectivity issues.</>,
+  ],
+  images: [
+    { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 16, height: 9 },
+    { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
+    { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
+    { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
+    { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 2", width: 16, height: 9 },
+    // ...atbp.
+  ],
+},
+
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
