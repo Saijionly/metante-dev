@@ -173,8 +173,7 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "Colegio De Montalban",
-        name: "2022 - 2026 (Graduated)",
+        name: "Colegio De Montalban, 2022 - 2026",
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
       {
