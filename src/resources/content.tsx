@@ -174,11 +174,14 @@ const about: About = {
     institutions: [
       {
         name: "Colegio De Montalban",
-        description: <>Studied Computer Engineering.</>,
+        timeframe: "2022 - 2026 (Graduated)",
+        description: <>Bachelor of Science in Computer Engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "PROJECT EXPERIENCE (Thesis Project)",
+        role: "Hardware & Software Engineer, UI Tester",
+        description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
+                       properly, and troubleshooting connectivity issues during development.</>,
       },
     ],
   },
