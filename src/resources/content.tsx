@@ -174,7 +174,7 @@ const about: About = {
     institutions: [
       {
         name: "Colegio De Montalban",
-        timeframe: "2022 - 2026 (Graduated)",
+              "2022 - 2026 (Graduated)",
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
       {
