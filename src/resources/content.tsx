@@ -180,6 +180,7 @@ const about: About = {
         name: "PROJECT EXPERIENCE (Thesis Project)",
         description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
                        properly, and troubleshooting connectivity issues during development.</>,
+      }
         images: [
           {
             src: "/images/projects/project-01/c1.jpg",
@@ -214,7 +215,6 @@ const about: About = {
                ],
       },
     ],
-  },
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
