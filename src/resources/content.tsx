@@ -178,7 +178,7 @@ const about: About = {
       },
       {
         name: "PROJECT EXPERIENCE (Thesis Project)",
-        role: "Hardware & Software Engineer, UI Tester",
+        description: <>Hardware & Software Engineer, UI Tester</>
         description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
                        properly, and troubleshooting connectivity issues during development.</>,
       },
