@@ -144,8 +144,8 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
-            width: 1,
-            height: 1,
+            width: 12,
+            height: 12,
           },
         ],
       },
@@ -164,11 +164,11 @@ const about: About = {
           </>,
         ],
         images: [
-         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 1, height: 1 },
-         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 1, height: 1 },
-         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 1, height: 1 },
-         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 1, height: 1 },
-         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 1, height: 1 },
+         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
       },
       {
