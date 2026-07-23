@@ -172,7 +172,7 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
-      {{
+      {
   company: "Thesis Project",
   timeframe: "2024 – 2025",
   role: "Hardware & Software Engineer, UI Tester",
