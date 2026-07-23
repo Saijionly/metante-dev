@@ -181,7 +181,6 @@ const about: About = {
         description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
                        properly, and troubleshooting connectivity issues during development.</>,
       }
-        images: [
           {
             src: "/images/projects/project-01/c1.jpg",
             alt: "Project screenshot 1",
@@ -213,6 +212,7 @@ const about: About = {
             height: 9,
           },
                ],
+         images: []
       },
     ],
   technical: {
