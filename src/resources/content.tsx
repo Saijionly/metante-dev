@@ -181,38 +181,37 @@ const about: About = {
         description: <>Created an IoT-based automated feeding and water quality monitoring system with machine learningassisted fish. Responsible for testing and maintaining the system, ensuring that all components functioned
                        properly, and troubleshooting connectivity issues during development.</>,
         images: [
-  // optional: leave the array empty if you don't want to display images
-  {
-    src: "/images/projects/project-01/c1.jpg",
-    alt: "Project screenshot 1",
-    width: 16,
-    height: 9,
-  },
-  {
-    src: "/images/projects/project-01/c2.jpg",
-    alt: "Project screenshot 2",
-    width: 16,
-    height: 9,
-  },
-  {
-    src: "/images/projects/project-01/c3.jpg",
-    alt: "Project screenshot 3",
-    width: 16,
-    height: 9,
-  },
-  {
-    src: "/images/projects/project-01/c4.jpg",
-    alt: "Project screenshot 4",
-    width: 16,
-    height: 9,
-  },
-  {
-    src: "/images/projects/project-01/c5.jpg",
-    alt: "Project screenshot 5",
-    width: 16,
-    height: 9,
-  },
-],
+          {
+            src: "/images/projects/project-01/c1.jpg",
+            alt: "Project screenshot 1",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/c2.jpg",
+            alt: "Project screenshot 2",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/c3.jpg",
+            alt: "Project screenshot 3",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/c4.jpg",
+            alt: "Project screenshot 4",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/c5.jpg",
+            alt: "Project screenshot 5",
+            width: 16,
+            height: 9,
+          },
+               ],
       },
     ],
   },
