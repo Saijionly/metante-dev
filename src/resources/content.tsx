@@ -8,7 +8,7 @@ const person: Person = {
   role: "Computer Engineer | Software & Hardware Developer",
   avatar: "/images/avatar.jpg",
   email: "lemuelayaso1@gmail.com",
-  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Asia/Rizal", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Filipino"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
@@ -149,15 +149,8 @@ const about: About = {
           },
         ],
       },
-    ],
-  },
-
-work: {
-    display: true, // set to false to hide this section
-    title: "Projects",
-    experiences: [
       {
-        company: "Thesis Project",
+        company: "AquaSense Project",
         timeframe: "2026",
         role: "Hardware & Software Engineer, UI Tester",
         achievements: [
@@ -185,11 +178,10 @@ work: {
          { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
-        ],  
+        ],
       },
     ],
- },
-  
+  },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
@@ -199,7 +191,7 @@ work: {
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
       {
-        name: "ABE International Business College, SHS Graduated 2019 - 2021",
+        name: "ABE International Business College, Senior HS 2019 - 2021",
         description: <>Technical-Vocational-Livelihood - Information and Communications Technology.</>,
       },
     ],
