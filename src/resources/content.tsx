@@ -175,10 +175,9 @@ const about: About = {
         name: "Colegio De Montalban, 2022 - 2026",
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
-
        {
         name: "Thesis Project - AquaSense, 2026 | Hardware & Software Engineer, UI Tester",
-        description: [
+        description: 
           <>
             <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
             Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
@@ -196,6 +195,7 @@ const about: About = {
             Responsible for testing and maintaining the system, ensuring proper function and
             troubleshooting connectivity issues.
           </>,
+            },
         ],
         images: [
          { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
@@ -204,10 +204,9 @@ const about: About = {
          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
-         images: [],
+       images: [],
       },
-    ],
-  },
+  
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
