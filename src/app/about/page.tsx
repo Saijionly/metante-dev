@@ -87,7 +87,7 @@ export default function About() {
             s={{ position: "relative", style: { top: "auto" } }}
             xs={{ style: { top: "auto" } }}
             minWidth="160"
-            paddingX="l"
+            paddingX="8"
             paddingBottom="xl"
             gap="m"
             flex={3}
@@ -159,7 +159,7 @@ export default function About() {
                 paddingBottom="8"
                 gap="8"
                 wrap
-                horizontal="center"
+                horizontal="start"
                 fitWidth
                 data-border="rounded"
               >
