@@ -61,7 +61,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Bridging Software and Hardware to Create Smarter Technology</>,
+  headline: <>Code. Hardware. Innovation.</>,
   featured: {
     display: true,
     title: (
@@ -77,7 +77,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
+      I'm {person.firstName}, a {person.role.toLowerCase()} {" "}
       <Text as="span" size="xl" weight="strong"></Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -104,9 +104,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges
-        into simple, elegant design solutions. Their work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} passionate about building reliable, efficient, and
+        innovative technology solutions. With a strong foundation in software development, hardware systems, and problem-solving, he enjoys creating practical applications
+        that bridge the gap between technology and real-word needs.
       </>
     ),
   },
