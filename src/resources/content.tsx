@@ -198,13 +198,13 @@ const about: About = {
           ]
             },
         ],
-        images: [
-         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
-        ],
+              <Row gap="8" wrap>
+              <img src="/images/projects/project-01/c1.jpg" alt="Project screenshot 1" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
+              <img src="/images/projects/project-01/c2.jpg" alt="Project screenshot 2" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
+              <img src="/images/projects/project-01/c3.jpg" alt="Project screenshot 3" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
+              <img src="/images/projects/project-01/c4.jpg" alt="Project screenshot 4" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
+              <img src="/images/projects/project-01/c5.jpg" alt="Project screenshot 5" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
+              </Row>
       },
   
   technical: {
