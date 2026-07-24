@@ -177,8 +177,7 @@ const about: About = {
       },
 
        {
-        name: "Thesis Project - AquaSense, 2026 ",
-        description: "Hardware & Software Engineer, UI Tester",
+        name: "Thesis Project - AquaSense, 2026 | Hardware & Software Engineer, UI Tester",
         description: [
           <>
             <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
