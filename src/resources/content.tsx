@@ -177,7 +177,7 @@ const about: About = {
       },
        {
         name: "Thesis Project - AquaSense, 2026 | Hardware & Software Engineer, UI Tester",
-        description: 
+        description: [
           <>
             <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
             Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
@@ -195,6 +195,7 @@ const about: About = {
             Responsible for testing and maintaining the system, ensuring proper function and
             troubleshooting connectivity issues.
           </>,
+          ]
             },
         ],
         images: [
