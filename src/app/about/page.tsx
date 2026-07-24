@@ -86,7 +86,7 @@ export default function About() {
             position="sticky"
             s={{ position: "relative", style: { top: "auto" } }}
             xs={{ style: { top: "auto" } }}
-            minWidth="120"
+            minWidth={120}
             paddingX="0"
             paddingBottom="xl"
             gap="m"
