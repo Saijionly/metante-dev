@@ -145,7 +145,7 @@ const about: About = {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
             width: 12,
-            height: 12,
+            height: 17,
           },
         ],
       },
@@ -160,8 +160,12 @@ const about: About = {
             Household and Small-Scale Aquaculture.
           </>,
           <>
-            Created an IoT-based automated feeding and water quality monitoring system with
-            machine learning-assisted fish.
+            Is a stand-type, multi-aquarium IoT system designed to automate fish feeding and monitor water quality. 
+            The prototype consists of three aquariums, with the primary tank measuring temperature, pH, turbidity, 
+            and fish activity through machine learning-based image analysis, while the other two monitor temperature 
+            and pH. The system also features an automated feeder with food detection to confirm successful dispensing. 
+            All collected data are sent to a web-based dashboard, allowing users to track water conditions, feeding schedules, 
+            feeding history, and fish activity for more efficient aquarium management.
           </>,
           <>
             Responsible for testing and maintaining the system, ensuring proper function and
@@ -169,11 +173,11 @@ const about: About = {
           </>,
         ],
         images: [
-         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
-         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 17 },
+         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 17 },
+         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 17 },
+         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 17 },
+         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 17 },
         ],
       },
       {
