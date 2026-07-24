@@ -149,9 +149,16 @@ const about: About = {
           },
         ],
       },
+    ],
+  },
+
+work: {
+    display: true, // set to false to hide this section
+    title: "Projects",
+    experiences: [
       {
         company: "Thesis Project",
-        timeframe: "2024 – 2025",
+        timeframe: "2026",
         role: "Hardware & Software Engineer, UI Tester",
         achievements: [
           <>
@@ -178,26 +185,11 @@ const about: About = {
          { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
+        ],  
       },
     ],
-  },
+ },
+  
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
