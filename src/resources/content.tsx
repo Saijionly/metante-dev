@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Lemuel Louise",
   lastName: "Metante",
   name: `Lemuel Louise Metante`,
-  role: "Computer Engineer",
+  role: "Computer Engineer | Software & Hardware Developer",
   avatar: "/images/avatar.jpg",
   email: "lemuelayaso1@gmail.com",
   location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -32,19 +32,19 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/lemuel-louise-metante",
+    link: "https://www.linkedin.com/in/lemuel-louise-metante-0ab693407",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/_heyesiuol/",
+    link: "https://www.instagram.com/_heyesiuol",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@_heyesiuol",
     essential: true,
   },
   {
@@ -145,7 +145,7 @@ const about: About = {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
             width: 12,
-            height: 17,
+            height: 12,
           },
         ],
       },
@@ -173,11 +173,11 @@ const about: About = {
           </>,
         ],
         images: [
-         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 17 },
-         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 17 },
-         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 17 },
-         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 17 },
-         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 17 },
+         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
       },
       {
