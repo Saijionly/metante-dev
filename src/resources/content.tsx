@@ -175,22 +175,23 @@ const about: About = {
         name: "Colegio De Montalban, 2022 - 2026",
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
-      {
-        name: "Thesis Project (2024 – 2025)",
-        description: (
+    ],
+    {
+        company: "Thesis Project",
+        timeframe: "2024 – 2025",
+        role: "Hardware & Software Engineer, UI Tester",
+        achievements: [
           <>
             <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
             Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
             Household and Small-Scale Aquaculture.
-          </>
-        ),
-        achievements: [
+          </>,
           <>
-            Is a stand-type, multi-aquarium IoT system designed to automate fish feeding and monitor water quality.
-            The prototype consists of three aquariums, with the primary tank measuring temperature, pH, turbidity,
-            and fish activity through machine learning-based image analysis, while the other two monitor temperature
-            and pH. The system also features an automated feeder with food detection to confirm successful dispensing.
-            All collected data are sent to a web-based dashboard, allowing users to track water conditions, feeding schedules,
+            Is a stand-type, multi-aquarium IoT system designed to automate fish feeding and monitor water quality. 
+            The prototype consists of three aquariums, with the primary tank measuring temperature, pH, turbidity, 
+            and fish activity through machine learning-based image analysis, while the other two monitor temperature 
+            and pH. The system also features an automated feeder with food detection to confirm successful dispensing. 
+            All collected data are sent to a web-based dashboard, allowing users to track water conditions, feeding schedules, 
             feeding history, and fish activity for more efficient aquarium management.
           </>,
           <>
@@ -199,14 +200,13 @@ const about: About = {
           </>,
         ],
         images: [
-          { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
-          { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
-          { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
-          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
-          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
       },
-    ],
   },
   technical: {
     display: true, // set to false to hide this section
