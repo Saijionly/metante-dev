@@ -203,8 +203,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "Colegio De Montalban, 2022 - 2026",
+        name: "Colegio De Montalban, College Graduated 2022 - 2026",
         description: <>Bachelor of Science in Computer Engineering.</>,
+      },
+      {
+        name: "ABE International Business College, SHS Graduated 2019 - 2021",
+        description: <>Technical-Vocational-Livelihood - Information and Communications Technology.</>,
       },
     ],
   },
