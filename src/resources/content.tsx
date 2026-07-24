@@ -20,6 +20,9 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
+  // Links are automatically displayed.
+  // Import new icons in /once-ui/icons.ts
+  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
@@ -108,7 +111,7 @@ const about: About = {
     ),
   },
   work: {
-    display: true,
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -147,6 +150,37 @@ const about: About = {
         ],
       },
       {
+        company: "Thesis Project",
+        timeframe: "2024 – 2025",
+        role: "Hardware & Software Engineer, UI Tester",
+        achievements: [
+          <>
+            <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
+            Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
+            Household and Small-Scale Aquaculture.
+          </>,
+          <>
+            Is a stand-type, multi-aquarium IoT system designed to automate fish feeding and monitor water quality. 
+            The prototype consists of three aquariums, with the primary tank measuring temperature, pH, turbidity, 
+            and fish activity through machine learning-based image analysis, while the other two monitor temperature 
+            and pH. The system also features an automated feeder with food detection to confirm successful dispensing. 
+            All collected data are sent to a web-based dashboard, allowing users to track water conditions, feeding schedules, 
+            feeding history, and fish activity for more efficient aquarium management.
+          </>,
+          <>
+            Responsible for testing and maintaining the system, ensuring proper function and
+            troubleshooting connectivity issues.
+          </>,
+        ],
+        images: [
+         { src: "/images/projects/project-01/c1.jpg", alt: "Project screenshot 1", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c2.jpg", alt: "Project screenshot 2", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c3.jpg", alt: "Project screenshot 3", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
+         { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
+        ],
+      },
+      {
         company: "Creativ3",
         timeframe: "2018 - 2022",
         role: "Lead Designer",
@@ -165,46 +199,17 @@ const about: About = {
     ],
   },
   studies: {
-    display: true,
+    display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
         name: "Colegio De Montalban, 2022 - 2026",
         description: <>Bachelor of Science in Computer Engineering.</>,
       },
-      {
-        name: "Thesis Project (2024 – 2025)",
-        description: (
-          <>
-            <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
-            Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
-            Household and Small-Scale Aquaculture.
-            <br /><br />
-            Is a stand-type, multi-aquarium IoT system designed to automate fish feeding and monitor
-            water quality. The prototype consists of three aquariums, with the primary tank measuring
-            temperature, pH, turbidity, and fish activity through machine learning-based image analysis,
-            while the other two monitor temperature and pH. The system also features an automated feeder
-            with food detection to confirm successful dispensing. All collected data are sent to a
-            web-based dashboard, allowing users to track water conditions, feeding schedules, feeding
-            history, and fish activity for more efficient aquarium management.
-            <br /><br />
-            Responsible for testing and maintaining the system, ensuring proper function and
-            troubleshooting connectivity issues.
-            <br /><br />
-            <Row gap="8" wrap>
-              <img src="/images/projects/project-01/c1.jpg" alt="Project screenshot 1" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
-              <img src="/images/projects/project-01/c2.jpg" alt="Project screenshot 2" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
-              <img src="/images/projects/project-01/c3.jpg" alt="Project screenshot 3" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
-              <img src="/images/projects/project-01/c4.jpg" alt="Project screenshot 4" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
-              <img src="/images/projects/project-01/c5.jpg" alt="Project screenshot 5" width={120} height={120} style={{ borderRadius: 8, objectFit: "cover" }} />
-            </Row>
-          </>
-        ),
-      },
     ],
   },
   technical: {
-    display: true,
+    display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -269,6 +274,8 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
+  // Create new blog posts by adding a new .mdx file to app/blog/posts
+  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -276,6 +283,8 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -283,14 +292,50 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
+  // Images by https://lorant.one
+  // These are placeholder images, replace with your own
   images: [
-    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
+    {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/vertical-2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-4.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-3.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
   ],
 };
+
+export { person, social, newsletter, home, about, blog, work, gallery };
