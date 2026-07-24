@@ -61,24 +61,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Bridging Software and Hardware to Create Smarter Technology</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4"></strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/building-a-customizable-design-system",
   },
   subline: (
     <>
       I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      <Text as="span" size="xl" weight="strong"></Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
     </>
   ),
 };
