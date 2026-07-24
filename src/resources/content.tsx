@@ -291,4 +291,6 @@ const gallery: Gallery = {
     { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
     { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
     { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
+  ],
+};
