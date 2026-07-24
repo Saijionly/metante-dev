@@ -150,10 +150,36 @@ const about: About = {
         ],
       },
       {
-        company: "Thesis Project",
-        timeframe: "2024 – 2025",
-        role: "Hardware & Software Engineer, UI Tester",
+        company: "Creativ3",
+        timeframe: "2018 - 2022",
+        role: "Lead Designer",
         achievements: [
+          <>
+            Developed a design system that unified the brand across multiple platforms, improving
+            design consistency by 40%.
+          </>,
+          <>
+            Led a cross-functional team to launch a new product line, contributing to a 15% increase
+            in overall company revenue.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Studies",
+    institutions: [
+      {
+        name: "Colegio De Montalban, 2022 - 2026",
+        description: <>Bachelor of Science in Computer Engineering.</>,
+      },
+
+       {
+        name: "Thesis Project - AquaSense, 2026 ",
+        description: "Hardware & Software Engineer, UI Tester",
+        description: [
           <>
             <strong>AquaSense:</strong> A Multi-Aquarium Stand-Type IoT-Based Automated Feeding and
             Water Quality Monitoring System with Machine Learning-Assisted Fish Activity Detection for
@@ -179,32 +205,6 @@ const about: About = {
          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "Colegio De Montalban, 2022 - 2026",
-        description: <>Bachelor of Science in Computer Engineering.</>,
       },
     ],
   },
