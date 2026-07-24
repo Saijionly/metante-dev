@@ -204,6 +204,7 @@ const about: About = {
          { src: "/images/projects/project-01/c4.jpg", alt: "Project screenshot 4", width: 12, height: 12 },
          { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
+         images: [],
       },
     ],
   },
