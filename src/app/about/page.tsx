@@ -204,4 +204,4 @@ export default function About() {
 
           {about.work.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s"
+              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
