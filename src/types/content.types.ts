@@ -111,7 +111,7 @@ export interface Home extends BasePageConfig {
 
 /**
  * About page configuration.
- * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, and technical skills.
+ * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, technical skills, and projects.
  */
 export interface About extends BasePageConfig {
   /** Table of contents configuration */
@@ -203,6 +203,35 @@ export interface About extends BasePageConfig {
         icon?: string;
       }>;
       /** Images related to the skill */
+      images?: Array<{
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      }>;
+    }>;
+  };
+  /** Personal / portfolio projects section (separate from work experience) */
+  projects: {
+    /** Whether to display the projects section */
+    display: boolean;
+    /** Title for the projects section */
+    title: string;
+    /** List of personal/portfolio projects */
+    items: Array<{
+      /** Project name */
+      name: string;
+      /** Timeframe of the project */
+      timeframe: string;
+      /** Role in the project */
+      role?: string;
+      /** Description / achievements, rendered as a bulleted list */
+      description: React.ReactNode[];
+      /** Images related to the project */
       images?: Array<{
         /** Image source path */
         src: string;
