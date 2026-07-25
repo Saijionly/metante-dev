@@ -49,6 +49,11 @@ export default function About() {
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
     },
+    {
+      title: about.projects.title,
+      display: about.projects.display,
+      items: about.projects.items.map((project) => project.name),
+    },
   ];
   return (
     <Column maxWidth="m">
@@ -77,7 +82,7 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Row fillWidth s={{ direction: "column"}} horizontal="center">
+      <Row fillWidth gap="16" s={{ direction: "column" }} horizontal="start">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
@@ -86,11 +91,11 @@ export default function About() {
             position="sticky"
             s={{ position: "relative", style: { top: "auto" } }}
             xs={{ style: { top: "auto" } }}
-            minWidth="160"
-            paddingX="8"
+            minWidth={120}
+            paddingX="0"
             paddingBottom="xl"
             gap="m"
-            flex={3}
+            flex={2}
             horizontal="start"
           >
             <Avatar src={person.avatar} size="xl" />
@@ -109,7 +114,7 @@ export default function About() {
             )}
           </Column>
         )}
-        <Column className={styles.blockAlign} flex={9} maxWidth={40}>
+        <Column className={styles.blockAlign} flex={10} maxWidth={40}>
           <Column
             id={about.intro.title}
             fillWidth
@@ -164,34 +169,34 @@ export default function About() {
                 data-border="rounded"
               >
                 {social
-                      .filter((item) => item.essential)
-                      .map(
-                  (item) =>
-                    item.link && (
-                      <React.Fragment key={item.name}>
-                        <Row s={{ hide: true }}>
-                          <Button
-                            key={item.name}
-                            href={item.link}
-                            prefixIcon={item.icon}
-                            label={item.name}
-                            size="s"
-                            weight="default"
-                            variant="secondary"
-                          />
-                        </Row>
-                        <Row hide s={{ hide: false }}>
-                          <IconButton
-                            size="l"
-                            key={`${item.name}-icon`}
-                            href={item.link}
-                            icon={item.icon}
-                            variant="secondary"
-                          />
-                        </Row>
-                      </React.Fragment>
-                    ),
-                )}
+                  .filter((item) => item.essential)
+                  .map(
+                    (item) =>
+                      item.link && (
+                        <React.Fragment key={item.name}>
+                          <Row s={{ hide: true }}>
+                            <Button
+                              key={item.name}
+                              href={item.link}
+                              prefixIcon={item.icon}
+                              label={item.name}
+                              size="s"
+                              weight="default"
+                              variant="secondary"
+                            />
+                          </Row>
+                          <Row hide s={{ hide: false }}>
+                            <IconButton
+                              size="l"
+                              key={`${item.name}-icon`}
+                              href={item.link}
+                              icon={item.icon}
+                              variant="secondary"
+                            />
+                          </Row>
+                        </React.Fragment>
+                      ),
+                  )}
               </Row>
             )}
           </Column>
@@ -291,7 +296,7 @@ export default function About() {
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+              <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text id={skill.title} variant="heading-strong-l">
@@ -312,6 +317,66 @@ export default function About() {
                     {skill.images && skill.images.length > 0 && (
                       <Row fillWidth paddingTop="m" gap="12" wrap>
                         {skill.images.map((image, index) => (
+                          <Row
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Row>
+                        ))}
+                      </Row>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.projects.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.projects.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.projects.title}
+              </Heading>
+              <Column fillWidth gap="l">
+                {about.projects.items.map((project, index) => (
+                  <Column key={`${project.name}-${index}`} fillWidth>
+                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
+                      <Text id={project.name} variant="heading-strong-l">
+                        {project.name}
+                      </Text>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {project.timeframe}
+                      </Text>
+                    </Row>
+                    {project.role && (
+                      <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                        {project.role}
+                      </Text>
+                    )}
+                    <Column as="ul" gap="16">
+                      {project.description.map((paragraph: React.ReactNode, index: number) => (
+                        <Text as="li" variant="body-default-m" key={`${project.name}-${index}`}>
+                          {paragraph}
+                        </Text>
+                      ))}
+                    </Column>
+                    {project.images && project.images.length > 0 && (
+                      <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
+                        {project.images.map((image, index) => (
                           <Row
                             key={index}
                             border="neutral-medium"
