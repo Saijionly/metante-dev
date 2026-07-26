@@ -16,10 +16,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <div
       style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(12px)",
         transition: "opacity 0.4s ease, transform 0.4s ease",
-        width: "100%",
       }}
     >
       {children}
