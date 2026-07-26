@@ -47,7 +47,7 @@ const social: Social = [
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `https://mail.google.com/mail/?view=cm&fs=1&to=${person.email}`,
     essential: true,
   },
 ];
