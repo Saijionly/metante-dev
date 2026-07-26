@@ -202,7 +202,7 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl" style={{ textAlign: "justify" }}>
               {about.intro.description}
             </Column>
           )}
@@ -226,7 +226,7 @@ export default function About() {
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
                     </Text>
-                    <Column as="ul" gap="16">
+                    <Column as="ul" gap="16" style={{ textAlign: "justify" }}>
                       {experience.achievements.map(
                         (achievement: React.ReactNode, index: number) => (
                           <Text
@@ -367,7 +367,7 @@ export default function About() {
                         {project.role}
                       </Text>
                     )}
-                    <Column as="ul" gap="16">
+                    <Column as="ul" gap="16" style={{ textAlign: "justify" }}>
                       {project.description.map((paragraph: React.ReactNode, index: number) => (
                         <Text as="li" variant="body-default-m" key={`${project.name}-${index}`}>
                           {paragraph}
