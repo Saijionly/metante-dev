@@ -35,7 +35,9 @@ export default function Blog() {
       <Column fillWidth flex={1} gap="40">
         <Posts range={[1, 1]} thumbnail />
         <Posts range={[2, 3]} columns="2" thumbnail direction="column" />
-        <EmailOctopusForm marginBottom="l" />
+        <Column marginBottom="l">
+        <EmailOctopusForm />
+        </Column>
         <Heading as="h2" variant="heading-strong-xl" marginLeft="l">
           Earlier posts
         </Heading>
