@@ -108,7 +108,7 @@ export default async function RootLayout({
           as="body"
           background="page"
           fillWidth
-          style={{ minHeight: "100vh", overflow: "visible" }}
+          style={{ minHeight: "100vh" }}
           margin="0"
           padding="0"
           horizontal="center"
