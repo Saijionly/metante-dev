@@ -16,30 +16,49 @@ interface ImageCarouselProps {
 
 export function ImageCarousel({ images }: ImageCarouselProps) {
   const [index, setIndex] = useState(0);
+  const [fading, setFading] = useState(false);
 
   if (!images || images.length === 0) return null;
 
+  function changeTo(newIndex: number) {
+    if (newIndex === index) return;
+    setFading(true);
+    setTimeout(() => {
+      setIndex(newIndex);
+      setFading(false);
+    }, 150);
+  }
+
   function goPrev() {
-    setIndex((i) => (i === 0 ? images.length - 1 : i - 1));
+    changeTo(index === 0 ? images.length - 1 : index - 1);
   }
 
   function goNext() {
-    setIndex((i) => (i === images.length - 1 ? 0 : i + 1));
+    changeTo(index === images.length - 1 ? 0 : index + 1);
   }
 
   const current = images[index];
 
   return (
     <Column fillWidth gap="8">
-      <Row fillWidth border="neutral-medium" radius="m" style={{ position: "relative" }}>
-        <Media
-          enlarge
-          radius="m"
-          sizes="(max-width: 560px) 100vw, 700px"
-          alt={current.alt}
-          src={current.src}
-          aspectRatio="16 / 9"
-        />
+      <Row fillWidth border="neutral-medium" radius="m" style={{ position: "relative", overflow: "hidden" }}>
+        <div
+          style={{
+            width: "100%",
+            opacity: fading ? 0 : 1,
+            transition: "opacity 0.15s ease-in-out",
+          }}
+        >
+          <Media
+            enlarge
+            radius="m"
+            sizes="(max-width: 768px) 100vw, 1200px"
+            alt={current.alt}
+            src={current.src}
+            aspectRatio="16 / 9"
+            quality={100}
+          />
+        </div>
         {images.length > 1 && (
           <>
             <Row
@@ -96,12 +115,13 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
           {images.map((_, i) => (
             <Row
               key={i}
-              onClick={() => setIndex(i)}
+              onClick={() => changeTo(i)}
               style={{
                 width: 6,
                 height: 6,
                 borderRadius: "50%",
                 cursor: "pointer",
+                transition: "background 0.2s ease",
                 background: i === index ? "var(--brand-solid-strong)" : "var(--neutral-alpha-medium)",
               }}
             />
