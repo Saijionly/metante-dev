@@ -8,9 +8,9 @@ const person: Person = {
   role: "Computer Engineer | Software & Hardware Developer",
   avatar: "/images/avatar.jpg",
   email: "lemuelayaso1@gmail.com",
-  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Filipino"], // optional: Leave the array empty if you don't want to display languages
-  locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
+  location: "Asia/Manila",
+  languages: ["English", "Filipino"],
+  locale: "en",
 };
 
 const newsletter: Newsletter = {
@@ -288,24 +288,24 @@ const about: About = {
         role: "Solo Developer",
         description: [
           <>
-            <strong>Xpense<strong> is a personal finance web application designed to help users track income,
-            expenses, savings goals, and recurring bills in one place. Built solo from concept to
-            deployment, the project focuses on solving real budgeting problems for a Filipino
-            audience — including automated government payroll deduction estimates and PHP-first
-            currency handling.
+            <strong>Xpense</strong> is a personal finance web application designed to help users
+            track income, expenses, savings goals, and recurring bills in one place. Built solo
+            from concept to deployment, the project focuses on solving real budgeting problems for
+            a Filipino audience, including automated government payroll deduction estimates and
+            PHP-first currency handling.
           </>,
           <>
             <strong>Key features:</strong> Multi-page dashboard with data visualizations (bar
             charts, pie charts, spending trends) built with Recharts; transaction management with
             CSV import, receipt photo uploads, and multi-currency support with live exchange rate
-            conversion; budget tracking with automatic threshold alerts; recurring bills &
+            conversion; budget tracking with automatic threshold alerts; recurring bills and
             subscriptions tracker with monthly auto-cycling due dates; a loan/interest calculator
             that integrates directly with the debt-tracking system, complete with a payment
             progress bar; Philippine payroll deduction estimator (SSS, PhilHealth, Pag-IBIG, and
             BIR withholding tax) that auto-generates itemized expense entries from salary income;
             Google OAuth and email/password authentication with per-user data isolation; fully
             responsive design with a persistent top navigation, scroll-triggered reveal
-            animations, and dark/light theme support; and multi-language support (English/
+            animations, and dark/light theme support; and multi-language support (English and
             Filipino).
           </>,
           <>
