@@ -49,7 +49,7 @@ import {
   SiArduino,
   SiOpencv,
   SiGit,
-  SiVisualstudiocode,
+  SiVscode,
   SiPostman,
   SiVercel,
 } from "react-icons/si";
@@ -118,7 +118,7 @@ export const iconLibrary: Record<string, IconType> = {
   networking: HiOutlineWifi,
   // Tools
   git: SiGit,
-  vscode: SiVisualstudiocode,
+  vscode: SiVscode,
   postman: SiPostman,
   vercel: SiVercel,
 };
