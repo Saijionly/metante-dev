@@ -56,7 +56,6 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
             alt={current.alt}
             src={current.src}
             aspectRatio="16 / 9"
-            quality={100}
           />
         </div>
         {images.length > 1 && (
