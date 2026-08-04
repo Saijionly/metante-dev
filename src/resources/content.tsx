@@ -282,6 +282,51 @@ const about: About = {
           { src: "/images/projects/project-01/c5.jpg", alt: "Project screenshot 5", width: 12, height: 12 },
         ],
       },
+      {
+        name: "Xpense — Personal Finance Tracker",
+        timeframe: "2026",
+        role: "Solo Developer",
+        description: [
+          <>
+            Xpense is a personal finance web application designed to help users track income,
+            expenses, savings goals, and recurring bills in one place. Built solo from concept to
+            deployment, the project focuses on solving real budgeting problems for a Filipino
+            audience — including automated government payroll deduction estimates and PHP-first
+            currency handling.
+          </>,
+          <>
+            <strong>Key features:</strong> Multi-page dashboard with data visualizations (bar
+            charts, pie charts, spending trends) built with Recharts; transaction management with
+            CSV import, receipt photo uploads, and multi-currency support with live exchange rate
+            conversion; budget tracking with automatic threshold alerts; recurring bills &
+            subscriptions tracker with monthly auto-cycling due dates; a loan/interest calculator
+            that integrates directly with the debt-tracking system, complete with a payment
+            progress bar; Philippine payroll deduction estimator (SSS, PhilHealth, Pag-IBIG, and
+            BIR withholding tax) that auto-generates itemized expense entries from salary income;
+            Google OAuth and email/password authentication with per-user data isolation; fully
+            responsive design with a persistent top navigation, scroll-triggered reveal
+            animations, and dark/light theme support; and multi-language support (English/
+            Filipino).
+          </>,
+          <>
+            <strong>Tech stack:</strong> Next.js (App Router), TypeScript, Tailwind CSS, Supabase
+            (PostgreSQL, Auth, Storage), Recharts.
+          </>,
+          <>
+            <strong>Live site:</strong>{" "}
+            <a href="https://xpenseledgertracker.vercel.app" target="_blank" rel="noopener noreferrer">
+              xpenseledgertracker.vercel.app
+            </a>
+          </>,
+        ],
+        images: [
+          { src: "/images/projects/xpense/1.jpg", alt: "Xpense login page", width: 16, height: 9 },
+          { src: "/images/projects/xpense/2.jpg", alt: "Xpense accounts and goals page", width: 16, height: 9 },
+          { src: "/images/projects/xpense/3.jpg", alt: "Xpense transactions page", width: 16, height: 9 },
+          { src: "/images/projects/xpense/4.jpg", alt: "Xpense dashboard", width: 16, height: 9 },
+          { src: "/images/projects/xpense/5.jpg", alt: "Xpense settings modal", width: 16, height: 9 },
+        ],
+      },
     ],
   },
 };
