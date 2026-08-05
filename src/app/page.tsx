@@ -2,10 +2,8 @@ import {
   Heading,
   Text,
   Button,
-  Avatar,
   RevealFx,
   Column,
-  Badge,
   Row,
   Schema,
   Meta,
@@ -15,7 +13,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { EmailOctopusForm } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
-import { EditorialHero } from "@/components/EditorialHero";
+import { SpaceHero } from "@/components/SpaceHero";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -44,7 +42,7 @@ export default function Home() {
         }}
       />
 
-      <EditorialHero />
+      <SpaceHero />
 
       <RevealFx paddingTop="4" delay={0.4} horizontal="center">
         <Button
