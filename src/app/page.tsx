@@ -14,7 +14,8 @@ import {
 import { home, about, person, baseURL, routes } from "@/resources";
 import { EmailOctopusForm } from "@/components";
 import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts"; 
+import { Posts } from "@/components/blog/Posts";
+import { HeroWork } from "@/components/HeroWork";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -49,7 +50,7 @@ export default function Home() {
               fillWidth
               horizontal="center"
               paddingTop="16"
-              paddingBottom="32"
+              paddingBottom="24"
               paddingLeft="12"
             >
               <Badge
@@ -65,17 +66,30 @@ export default function Home() {
               </Badge>
             </RevealFx>
           )}
-          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
-            <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
-            </Heading>
+
+          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="8">
+            <Row gap="24" vertical="center" horizontal="center" wrap>
+              {about.avatar.display && (
+                <Avatar src={person.avatar} size="xl" />
+              )}
+              <Column horizontal="center" align="center">
+                <Heading wrap="balance" variant="display-strong-xl" style={{ lineHeight: 1.02 }}>
+                  {person.firstName.split(" ")[0].toLowerCase()}
+                </Heading>
+                <Heading wrap="balance" variant="display-strong-xl" style={{ lineHeight: 1.02 }}>
+                  {person.lastName.toLowerCase()}
+                </Heading>
+              </Column>
+            </Row>
           </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+
+          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingTop="16" paddingBottom="32">
+            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-l">
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+
+          <RevealFx paddingTop="4" delay={0.4} horizontal="center" paddingLeft="12">
             <Button
               id="about"
               data-border="rounded"
@@ -84,25 +98,21 @@ export default function Home() {
               size="m"
               weight="default"
               arrowIcon
-            >
-              <Row gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )}
-                {about.title}
-              </Row>
-            </Button>
+              label="Explore my story"
+            />
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+
+      <RevealFx translateY="16" delay={0.5} fillWidth>
+        <Column fillWidth gap="16" paddingTop="24">
+          <Text variant="label-default-s" onBackground="neutral-weak" wrap="balance">
+            selected work
+          </Text>
+          <HeroWork />
+        </Column>
       </RevealFx>
+
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
@@ -123,7 +133,7 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <Projects range={[2]} />
+      <Projects range={[1]} />
       <EmailOctopusForm />
     </Column>
   );

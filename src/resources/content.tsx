@@ -288,7 +288,7 @@ const about: About = {
         role: "Solo Developer",
         description: [
           <>
-            <strong>Xpense</strong> is a personal finance web application designed to help users
+            <strong>Xpense:</strong> is a personal finance web application designed to help users
             track income, expenses, savings goals, and recurring bills in one place. Built solo
             from concept to deployment, the project focuses on solving real budgeting problems for
             a Filipino audience, including automated government payroll deduction estimates and
