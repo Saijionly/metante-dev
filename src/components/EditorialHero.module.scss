@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+  padding: 4rem 0 2rem;
+}
+
+.bigName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(4rem, 14vw, 11rem);
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: var(--neutral-on-background-strong);
+}
+
+.roleLabel {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  text-transform: lowercase;
+  line-height: 1.15;
+}
+
+.avatarFloat {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--neutral-alpha-medium);
+}
+
+.divider {
+  border-top: 1px solid var(--neutral-alpha-medium);
+}
