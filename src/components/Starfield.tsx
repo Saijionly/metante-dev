@@ -6,6 +6,8 @@ interface Star {
   x: number;
   y: number;
   z: number;
+  phase: number;
+  twinkleSpeed: number;
 }
 
 export function Starfield() {
@@ -29,11 +31,13 @@ export function Starfield() {
       height = canvas.offsetHeight;
       canvas.width = width;
       canvas.height = height;
-      const count = 350;
+      const count = 500;
       stars = Array.from({ length: count }, () => ({
         x: (Math.random() - 0.5) * width,
         y: (Math.random() - 0.5) * height,
         z: Math.random() * width,
+        phase: Math.random() * Math.PI * 2,
+        twinkleSpeed: Math.random() * 0.0018 + 0.0006,
       }));
     }
 
@@ -41,7 +45,7 @@ export function Starfield() {
       scrollRef.current = window.scrollY;
     }
 
-    function draw() {
+    function draw(time: number) {
       if (!canvas || !ctx) return;
       ctx.fillStyle = "#050505";
       ctx.fillRect(0, 0, width, height);
@@ -68,7 +72,9 @@ export function Starfield() {
         if (px < 0 || px > width || py < 0 || py > height) continue;
 
         const size = Math.max(0.3, (1 - star.z / width) * 2.2);
-        const opacity = Math.min(1, (1 - star.z / width) * 1.5);
+        const depthOpacity = Math.min(1, (1 - star.z / width) * 1.5);
+        const twinkle = 0.4 + 0.6 * Math.abs(Math.sin(time * star.twinkleSpeed + star.phase));
+        const opacity = depthOpacity * twinkle;
 
         ctx.beginPath();
         ctx.arc(px, py, size, 0, Math.PI * 2);
@@ -80,7 +86,7 @@ export function Starfield() {
     }
 
     resize();
-    draw();
+    animationId = requestAnimationFrame(draw);
     window.addEventListener("resize", resize);
     window.addEventListener("scroll", handleScroll, { passive: true });
 
